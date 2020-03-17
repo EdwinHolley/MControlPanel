@@ -38,8 +38,11 @@
     Private Sub Form1_Activated(sender As Object, e As EventArgs) Handles Me.Activated
 
         ' Read in json with filesystem
+        ' This is apparently not a json file
         Dim json As String
         json = My.Computer.FileSystem.ReadAllText("I:\Programs\MineCraftBedrock\server.properties")
+        MsgBox(json)
+
         Dim read = Newtonsoft.Json.Linq.JObject.Parse(json)
         TextBox3.Text = read.Item("server-name").ToString
         TextBox2.Text = read.Item("level-name").ToString
@@ -67,4 +70,8 @@
         CheckBox7.Checked = read.Item("correct-player-movement")
 
     End Sub
+
+    Private Function MsgBox() As String
+        Throw New NotImplementedException()
+    End Function
 End Class

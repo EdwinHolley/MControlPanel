@@ -67,11 +67,15 @@ Partial Class Form1
         Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.TextBox23 = New System.Windows.Forms.TextBox()
+        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.TextBox21 = New System.Windows.Forms.TextBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -471,8 +475,11 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.CheckBox9)
+        Me.GroupBox1.Controls.Add(Me.TextBox23)
+        Me.GroupBox1.Controls.Add(Me.TextBox22)
+        Me.GroupBox1.Controls.Add(Me.WebBrowser1)
+        Me.GroupBox1.Controls.Add(Me.TextBox21)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.CheckBox8)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlText
@@ -483,27 +490,49 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "MControlPanel Options"
         '
-        'RadioButton2
+        'CheckBox9
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(9, 97)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(84, 17)
-        Me.RadioButton2.TabIndex = 3
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Write Option"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Location = New System.Drawing.Point(74, 20)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(75, 17)
+        Me.CheckBox9.TabIndex = 8
+        Me.CheckBox9.Text = "Toast msg"
+        Me.CheckBox9.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'TextBox23
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(9, 74)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 2
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Read Options"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.TextBox23.Location = New System.Drawing.Point(7, 98)
+        Me.TextBox23.Name = "TextBox23"
+        Me.TextBox23.ReadOnly = True
+        Me.TextBox23.Size = New System.Drawing.Size(137, 20)
+        Me.TextBox23.TabIndex = 7
+        '
+        'TextBox22
+        '
+        Me.TextBox22.Location = New System.Drawing.Point(7, 72)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.ReadOnly = True
+        Me.TextBox22.Size = New System.Drawing.Size(137, 20)
+        Me.TextBox22.TabIndex = 6
+        Me.TextBox22.Text = "Local Version"
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Location = New System.Drawing.Point(7, 150)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(137, 22)
+        Me.WebBrowser1.TabIndex = 5
+        '
+        'TextBox21
+        '
+        Me.TextBox21.Location = New System.Drawing.Point(7, 124)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.ReadOnly = True
+        Me.TextBox21.Size = New System.Drawing.Size(137, 20)
+        Me.TextBox21.TabIndex = 4
+        Me.TextBox21.Text = "Web Version"
         '
         'Button4
         '
@@ -533,11 +562,21 @@ Partial Class Form1
         Me.Button5.Text = "Users"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'CheckedListBox1
+        '
+        Me.CheckedListBox1.FormattingEnabled = True
+        Me.CheckedListBox1.Items.AddRange(New Object() {"Started", "Rebooting", "Stopped"})
+        Me.CheckedListBox1.Location = New System.Drawing.Point(425, 41)
+        Me.CheckedListBox1.Name = "CheckedListBox1"
+        Me.CheckedListBox1.Size = New System.Drawing.Size(75, 49)
+        Me.CheckedListBox1.TabIndex = 46
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(509, 463)
+        Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBox20)
@@ -650,7 +689,11 @@ Partial Class Form1
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Button4 As Button
     Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Button5 As Button
+    Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents TextBox21 As TextBox
+    Friend WithEvents TextBox23 As TextBox
+    Friend WithEvents TextBox22 As TextBox
+    Friend WithEvents CheckBox9 As CheckBox
+    Friend WithEvents CheckedListBox1 As CheckedListBox
 End Class
