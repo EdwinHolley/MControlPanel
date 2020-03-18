@@ -41,7 +41,7 @@
         ' This is apparently not a json file
         Dim json As String
         json = My.Computer.FileSystem.ReadAllText("I:\Programs\MineCraftBedrock\server.properties")
-        MsgBox(json)
+        Dim v = MsgBox(json)
 
         Dim read = Newtonsoft.Json.Linq.JObject.Parse(json)
         TextBox3.Text = read.Item("server-name").ToString

@@ -76,6 +76,12 @@ Partial Class Form1
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
+        Me.Button8 = New System.Windows.Forms.Button()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -475,6 +481,12 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button8)
+        Me.GroupBox1.Controls.Add(Me.CheckBox11)
+        Me.GroupBox1.Controls.Add(Me.Button7)
+        Me.GroupBox1.Controls.Add(Me.Button6)
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.CheckBox10)
         Me.GroupBox1.Controls.Add(Me.CheckBox9)
         Me.GroupBox1.Controls.Add(Me.TextBox23)
         Me.GroupBox1.Controls.Add(Me.TextBox22)
@@ -485,7 +497,7 @@ Partial Class Form1
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.GroupBox1.Location = New System.Drawing.Point(347, 273)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(150, 178)
+        Me.GroupBox1.Size = New System.Drawing.Size(267, 178)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "MControlPanel Options"
@@ -566,16 +578,72 @@ Partial Class Form1
         '
         Me.CheckedListBox1.FormattingEnabled = True
         Me.CheckedListBox1.Items.AddRange(New Object() {"Started", "Rebooting", "Stopped"})
-        Me.CheckedListBox1.Location = New System.Drawing.Point(425, 41)
+        Me.CheckedListBox1.Location = New System.Drawing.Point(506, 12)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(75, 49)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(108, 49)
         Me.CheckedListBox1.TabIndex = 46
+        '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Location = New System.Drawing.Point(155, 20)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(88, 17)
+        Me.CheckBox10.TabIndex = 9
+        Me.CheckBox10.Text = "Start on Boot"
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(155, 96)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(106, 23)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "Backup Now"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(155, 122)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(106, 23)
+        Me.Button6.TabIndex = 11
+        Me.Button6.Text = "Backup Schedule"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(155, 149)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(106, 23)
+        Me.Button7.TabIndex = 12
+        Me.Button7.Text = "Backup Config"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'CheckBox11
+        '
+        Me.CheckBox11.AutoSize = True
+        Me.CheckBox11.Location = New System.Drawing.Point(155, 74)
+        Me.CheckBox11.Name = "CheckBox11"
+        Me.CheckBox11.Size = New System.Drawing.Size(88, 17)
+        Me.CheckBox11.TabIndex = 13
+        Me.CheckBox11.Text = "Auto Backup"
+        Me.CheckBox11.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(155, 43)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(106, 23)
+        Me.Button8.TabIndex = 14
+        Me.Button8.Text = "Server Stats"
+        Me.Button8.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(509, 463)
+        Me.ClientSize = New System.Drawing.Size(626, 463)
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.GroupBox1)
@@ -696,4 +764,10 @@ Partial Class Form1
     Friend WithEvents TextBox22 As TextBox
     Friend WithEvents CheckBox9 As CheckBox
     Friend WithEvents CheckedListBox1 As CheckedListBox
+    Friend WithEvents CheckBox11 As CheckBox
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents CheckBox10 As CheckBox
+    Friend WithEvents Button8 As Button
 End Class

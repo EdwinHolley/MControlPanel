@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+Partial Class UserControl
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -64,7 +64,7 @@ Partial Class Form2
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "White List"
         '
-        'Form2
+        'UserControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -73,7 +73,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form2"
+        Me.Name = "UserControl"
         Me.Text = "User Control"
         Me.ResumeLayout(False)
         Me.PerformLayout()
