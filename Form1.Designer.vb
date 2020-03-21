@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
@@ -35,7 +36,7 @@ Partial Class Form1
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.StopMCB = New System.Windows.Forms.Button()
         Me.StartMCB = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
@@ -67,6 +68,9 @@ Partial Class Form1
         Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.CheckBox11 = New System.Windows.Forms.CheckBox()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -82,9 +86,8 @@ Partial Class Form1
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -224,14 +227,14 @@ Partial Class Form1
         Me.TextBox2.TabIndex = 12
         Me.TextBox2.Text = "Level Name"
         '
-        'Button1
+        'StopMCB
         '
-        Me.Button1.Location = New System.Drawing.Point(344, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Stop"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.StopMCB.Location = New System.Drawing.Point(344, 12)
+        Me.StopMCB.Name = "StopMCB"
+        Me.StopMCB.Size = New System.Drawing.Size(75, 23)
+        Me.StopMCB.TabIndex = 13
+        Me.StopMCB.Text = "Stop"
+        Me.StopMCB.UseVisualStyleBackColor = True
         '
         'StartMCB
         '
@@ -508,6 +511,35 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "MControlPanel Options"
         '
+        'CheckBox13
+        '
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Location = New System.Drawing.Point(154, 216)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(86, 17)
+        Me.CheckBox13.TabIndex = 17
+        Me.CheckBox13.Text = "Auto Update"
+        Me.CheckBox13.UseVisualStyleBackColor = True
+        '
+        'CheckBox12
+        '
+        Me.CheckBox12.AutoSize = True
+        Me.CheckBox12.Location = New System.Drawing.Point(7, 43)
+        Me.CheckBox12.Name = "CheckBox12"
+        Me.CheckBox12.Size = New System.Drawing.Size(102, 17)
+        Me.CheckBox12.TabIndex = 16
+        Me.CheckBox12.Text = "Minimize to Tray"
+        Me.CheckBox12.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(6, 212)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(137, 23)
+        Me.Button9.TabIndex = 15
+        Me.Button9.Text = "Update Server"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Button8
         '
         Me.Button8.Location = New System.Drawing.Point(154, 75)
@@ -645,34 +677,17 @@ Partial Class Form1
         Me.CheckedListBox1.Size = New System.Drawing.Size(108, 49)
         Me.CheckedListBox1.TabIndex = 46
         '
-        'Button9
+        'ToolTip1
         '
-        Me.Button9.Location = New System.Drawing.Point(6, 212)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(137, 23)
-        Me.Button9.TabIndex = 15
-        Me.Button9.Text = "Update Server"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.ToolTip1.Tag = "This is the server name shown in the in-game server list."
+        Me.ToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
+        Me.ToolTip1.ToolTipTitle = "Server Name"
         '
-        'CheckBox12
+        'ToolTip2
         '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.Location = New System.Drawing.Point(7, 43)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(102, 17)
-        Me.CheckBox12.TabIndex = 16
-        Me.CheckBox12.Text = "Minimize to Tray"
-        Me.CheckBox12.UseVisualStyleBackColor = True
-        '
-        'CheckBox13
-        '
-        Me.CheckBox13.AutoSize = True
-        Me.CheckBox13.Location = New System.Drawing.Point(154, 216)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(86, 17)
-        Me.CheckBox13.TabIndex = 17
-        Me.CheckBox13.Text = "Auto Update"
-        Me.CheckBox13.UseVisualStyleBackColor = True
+        Me.ToolTip2.Tag = "The name of level to be used/generated. Each level has its own folder in /worlds." &
+    ""
+        Me.ToolTip2.ToolTipTitle = "Level Name"
         '
         'Form1
         '
@@ -712,7 +727,7 @@ Partial Class Form1
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.StartMCB)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.StopMCB)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ComboBox4)
@@ -758,7 +773,7 @@ Partial Class Form1
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents StopMCB As Button
     Friend WithEvents StartMCB As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents NumericUpDown1 As NumericUpDown
@@ -808,4 +823,6 @@ Partial Class Form1
     Friend WithEvents CheckBox13 As CheckBox
     Friend WithEvents CheckBox12 As CheckBox
     Friend WithEvents Button9 As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
 End Class
